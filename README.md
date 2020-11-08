@@ -1,21 +1,20 @@
 # Zeraki Assessment Questions
 
 # Authors
-- [Lucas Otieno](https: // github.com/OwinoLucas)
+- [Lucas Otieno]
 
 # Project setup instructions
 To view and run/test my answers in your local machine use the following commands:
 
 - `git clone https: // github.com/OwinoLucas/interviewQs.git`
 - `cd interviewQs`
-- `atom .`
-- `code .` [//]:  # (this is if Visual Studio Code is your preferred text editor)
+- `atom . or code .` depending on your text editor
 - `Run python3 question1, 2 or 3 in terminal to test the fuctions`
 
-# License info
+# License
 MIT License
 
-Copyright(c) 2018 Lucas Owino
+Copyright(c) 2020 Lucas Owino
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files(the "Software"), to deal
