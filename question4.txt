@@ -1,0 +1,18 @@
+Question 4
+a)Create the tables
+
+First create the database
+CREATE DATABASE education;
+
+Students table
+CREATE TABLE students(studentsid INT(11), name VARCHAR(250), course INT(11), FOREIGN KEY(course) REFERENCES course(courseid));
+
+Course table
+CREATE TABLE course(courseid INT(11), name  VARCHAR(250), institution INT(11), FOREIGN KEY(institution) REFERENCES institution(institutionid));
+
+Institution table
+CREATE TABLE course(institutionid INT(11), name VARCHAR(250));
+
+b)Query that will display number of students per course per institution
+
+i) SELECT COUNT (*) FROM student WHERE
