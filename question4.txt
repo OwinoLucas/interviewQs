@@ -4,6 +4,9 @@ a)Create the tables
 First create the database
 CREATE DATABASE education;
 
+NAVIGATE TO THE DATABASE
+\c education;
+
 Students table
 CREATE TABLE students(studentsid INT(11), name VARCHAR(250), course INT(11), FOREIGN KEY(course) REFERENCES course(courseid));
 
@@ -15,4 +18,6 @@ CREATE TABLE course(institutionid INT(11), name VARCHAR(250));
 
 b)Query that will display number of students per course per institution
 
-i) SELECT COUNT (*) FROM student WHERE
+i) SELECT COUNT * AS number of students FROM course WHERE course="Bsc. Actuarial Science" AND institution="University College Dublin"
+
+i) SELECT COUNT * AS number of students FROM course WHERE course="MPhil Genomics" AND institution="University College London"

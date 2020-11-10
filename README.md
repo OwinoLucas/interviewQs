@@ -1,7 +1,7 @@
 # Zeraki Assessment Questions
 
 # Authors
-- [Lucas Otieno]
+- Lucas Otieno
 
 # Project setup instructions
 To view and run/test my answers in your local machine use the following commands:

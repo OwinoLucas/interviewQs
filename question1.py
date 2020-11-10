@@ -1,15 +1,20 @@
 # Question 1
 
-def missingInteger(array_K, N):
+def missingInteger(array_K):
     array_K.sort()
-    for i in range(0, N + 1):
-        if array_K[i + 1] - array_K[i] != 1:
-            return array_K[i] + 1
-        elif array_K[i + 1] - array_K[i] == 1:
-            return array_K[i] - 1
-        else:
+    N = len(array_K)
+    print(N)
+
+    for i in range(0, N):
+        while array_K[i + 1] > array_K[i] and array_K[i] >= 1:
+            if array_K[i + 1] - array_K[i] != 1:
+                return array_K[i] + 1
+            if array_K[i + 1] - array_K[0] == 1 and array_K[i] == 2:
+                return 1
+            # if array_K[i + 1] - array_K[i] == 1 and array_K[i] == 1 and array_K[-1] == N - 1:
+            #     return array_K[-1] + 1
             i += 1
 
 
-# test example, you can change the values
-print(missingInteger([1, 3, 5, 6, 7, 4], 7))
+# test example
+print(missingInteger([3, 1, 5, 4]))
